@@ -1,0 +1,7 @@
+models:
+  - name: stg_dim_referee
+    columns:
+      - name: referee_id
+        tests:
+          - unique
+          - not_null

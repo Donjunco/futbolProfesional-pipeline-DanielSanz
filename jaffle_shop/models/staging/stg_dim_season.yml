@@ -1,0 +1,7 @@
+models:
+  - name: stg_dim_season
+    columns:
+      - name: season_id
+        tests:
+          - unique
+          - not_null

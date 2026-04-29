@@ -1,0 +1,7 @@
+models:
+  - name: stg_dim_manager
+    columns:
+      - name: manager_id
+        tests:
+          - unique
+          - not_null

@@ -21,22 +21,11 @@ models:
     staging:
       +schema: STAGING
       +materialized: view
-      #subcarpetas
-      tpcds:
-        +schema: STAGING
-        +materialized: view
 
     intermediate:
       +schema: INTERMEDIATE
       +materialized: view
-      #subcarpetas
-      tpcds:
-        +schema: INTERMEDIATE
-        +materialized: view
         
     marts:
       +schema: MARTS
       +materialized: table
-      tpcds:
-        +schema: MARTS
-        +materialized: view

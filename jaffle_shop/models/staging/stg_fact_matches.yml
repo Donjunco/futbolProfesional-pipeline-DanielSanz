@@ -1,0 +1,9 @@
+models:
+  - name: stg_fact_matches
+    columns:
+      - name: match_id
+        tests:
+          - unique
+          - not_null
+      
+
