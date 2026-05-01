@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: mart_fact_team_stats
+    tests:
+      # El test unique_combination_of_columns verifica que la combinación de match_id y team_id sea única en la tabla mart_fact_team_stats, lo que asegura que no haya registros duplicados para el mismo equipo en el mismo partido.
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: ['match_id', 'team_id']
+
+    columns:
+      - name: match_id
+        tests:
+          - not_null
+      - name: team_id
+        tests:
+          - not_null
