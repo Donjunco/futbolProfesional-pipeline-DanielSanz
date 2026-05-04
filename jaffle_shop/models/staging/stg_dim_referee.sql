@@ -21,6 +21,7 @@ renamed as (
     ) AS referee_name,
     COUNTRY_ID as country_id,
     from source
+    where REFEREE_ID is not null
 
 )
 
